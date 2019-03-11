@@ -1,0 +1,50 @@
+.fade-enter{
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active{
+    opacity: 1;
+    transition: opacity 1000ms ease-in
+}
+
+.fade-exit{
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active{
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in
+}
+p {
+    font-family: "OpenSans-Regular";
+    color: #666666;
+    font-size: 18px;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home-section {
+    background: url("./assets/images/coder.jpg") no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.home-section .display{
+    background: rgba(15, 23, 24, 0.486);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.home-section .home-inner {
+    padding-top: 150px; 
+}
+
+.navbrand-color {
+    color: #f57a08;
+}

@@ -1,0 +1,44 @@
+{
+    "name": "mern",
+    "version": "1.0.0",
+    "description": "A Full stack app created with MERN",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix todo",
+        "build": "babel server.js --out-dir build",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix levineclient",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix levineclient && npm run build --prefix levineclient"
+    },
+    "author": "Mbogo Kennedy",
+    "license": "MIT",
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.1.0",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "gravatar": "^1.8.0",
+        "jsonwebtoken": "^8.5.0",
+        "moment": "^2.24.0",
+        "morgan": "^1.9.1",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0",
+        "passport-local-postgres": "^1.0.3",
+        "pg": "^6.4.2",
+        "pg-hstore": "^2.3.2",
+        "sequelize": "^4.43.0",
+        "uuid": "^3.3.2",
+        "validator": "^10.11.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-watch": "^7.0.0",
+        "nodemon": "^1.18.9"
+    }
+}
